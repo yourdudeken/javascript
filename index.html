@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Calendar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script type="text/javascript">
-        function product(a,b) {
-            return a*b
-        }
-        document.write(product(700,134))
-    </script>
+
+    <div class="calendar-container">
+        <div class="header">
+            <button onclick="prevMonth()">Prev</button>
+            <div id="monthYear"></div>
+            <button onclick="nextMonth()">Next</button>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
